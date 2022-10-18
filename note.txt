@@ -1,0 +1,8 @@
+Morgan dùng để logger HTTP request
+
+__dirname : trả về present path
+
+
+- code trong src, 
+- public quản lý các file tĩnh, font such as html, css, js
+- resource quản lý các file ko ra thẳng public
