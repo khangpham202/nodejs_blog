@@ -6,3 +6,10 @@ __dirname : trả về present path
 - code trong src, 
 - public quản lý các file tĩnh, font such as html, css, js
 - resource quản lý các file ko ra thẳng public
+
+*** GET method : sử dụng trong trường hợp muốn nhận dữ liệu từ server về client
+
+
+*** POST method : ngược lại với Get method
+
+
