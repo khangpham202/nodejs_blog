@@ -1,12 +1,12 @@
-const express = require("express");
-const morgan = require("morgan");
-const { engine } = require("express-handlebars");
-const path = require("path");
-const route = require("./routes");
+const express = require('express');
+const morgan = require('morgan');
+const { engine } = require('express-handlebars');
+const path = require('path');
+const route = require('./routes');
 const app = express();
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded());
 app.use(express.json());
 
@@ -15,18 +15,18 @@ app.use(express.json());
 
 // Templte engine
 app.engine(
-  "hbs",
-  engine({
-    extname: ".hbs",
-  })
+    'hbs',
+    engine({
+        extname: '.hbs',
+    }),
 );
-app.set("view engine", "hbs");
-app.set("views", path.join(__dirname, "resources/views"));
+app.set('view engine', 'hbs');
+        app.set('views', path.join(__dirname, 'resources/views'));
 // console.log(path.join(__dirname,"scss"));
 
 // Routes init
 route(app);
 
-app.listen(port, () =>
-  console.log(`Your server running at http://localhost:${port}`)
+      app.listen(port, () =>
+    console.log(`Your server running at http://localhost:${port}`),
 );
