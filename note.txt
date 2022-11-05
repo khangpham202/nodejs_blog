@@ -12,4 +12,23 @@ __dirname : trả về present path
 
 *** POST method : ngược lại với Get method
 
+****** Middleware
 
+### Ý nghĩa
+- Phần mềm trung gian (đứng giữa các thành phần trong mô hình phần mềm)
+
+Browser (client) ============= Request ============> Server (Node)
+                                ||
+                            middleware
+                                ||
+Browser (client) <============ Response ============= Server (Node)
+
+### Vai trò
+- Middleware sẽ đóng vai trò trung gian giữa request/response (tương tác với người dùng) và các xử lý logic bên trong web server.
+- Middleware trong các Framework lập tình Web (Django, Rails, ExpressJS), sẽ là các hàm được dùng để tiền xử lý, lọc các request trước khi đưa vào xử lý logic hoặc điều chỉnh các response trước khi gửi về cho người dùng.
+
+
+### Ứng dụng
+- Dựng chức năng xác thực (Authentication)
+- Dựng chức năng phần quyền (Authorization)
+- Để chia sẻ các giá trị của biến tới tất cả các views (BE)

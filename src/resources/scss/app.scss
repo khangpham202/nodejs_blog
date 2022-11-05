@@ -1,5 +1,12 @@
-            @import 'variables';
+@import 'variables';
 
 h1 {
     color: $blue-color;
+}
+
+.user-avatar{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 4px;
 }
